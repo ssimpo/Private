@@ -49,6 +49,23 @@ The default Map object used to store values against a given object / class insta
 #### constructorParams
 
 The default parameters to use when creating a new Map object for your private values.  This defaults to an empty an array and should remain as-such unless you have a special reason for changing it.<br />
+
+### Static methods
+
+### getInstance()
+
+Get a new instance of Private, the same as new Private().  This is just a convenience method so you can:
+
+```javascript
+const $private = require('@simpo/private').getInstance();
+```
+
+This is neater than and easier to understand than:
+
+```javascript
+const $private = new (require('@simpo/private'))();
+```
+
 ### Instance properties
 
 #### Constructor

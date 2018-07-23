@@ -89,6 +89,17 @@ class Private extends WeakMap {
 	}
 
 	/**
+	 * Get a new instance of this class.
+	 *
+	 * @static
+	 * @param {mixed[]} [...params]		Parameters to supply to the constructor.
+	 * @returns {Private}
+	 */
+	static getInstance(...params) {
+		return new Private(...params);
+	}
+
+	/**
 	 * Test for the existence of a given value set against the reference object.
 	 *
 	 * @public

@@ -1,0 +1,31 @@
+{
+  "name": "@simpo/Private",
+  "version": "0.1.0",
+  "description": "Private methods and properties within ES6 classes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "engines": ">=9.5.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ssimpo/Private.git"
+  },
+  "keywords": [
+    "es6",
+    "classes"
+  ],
+  "author": {
+    "email": "stephen@whitebolt.net",
+    "name": "Stephen Simpson"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssimpo/Private/issues"
+  },
+  "homepage": "https://github.com/ssimpo/Private#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

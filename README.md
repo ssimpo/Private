@@ -22,7 +22,7 @@ pnpm install --save
 ## Example
 
 ```javascript
-const Private = new WeakMap();
+const Private = require('@simpo/private');
 const $private = new Private();
 
 

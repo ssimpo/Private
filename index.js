@@ -64,6 +64,13 @@ class Private extends WeakMap {
 		super.set(ref2, values);
 	}
 
+	invoke(ref, methodName, ...params) {
+		if (!ref) throw new RangeError('A reference object must be supplied to the invoke() method.');
+		if (!methodName) throw new RangeError('A method name must be supplied to the invoke() method.');
+		const method = this.get(ref, methodName, ()=>{});
+		return method.bind(ref)(...params);
+	}
+
 	set(ref, key, value) {
 		if (!key) throw new RangeError('A key must be supplied to the set() method.');
 		return this.get(ref).set(key, value);

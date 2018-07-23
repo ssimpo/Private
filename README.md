@@ -118,6 +118,24 @@ Test for the existence of a given value set against the reference object.<br /><
 | key  | string  | undefined | The key you wish to test, if not set then then test for just the _reference_ object. |
 | **returns**  | Boolean  | **false** | **The a value set for given _key_ against given _reference_.** |
 
+### invoke()
+
+Invoke a given private method, binding to the supplied reference object.<br /><br />
+
+| Parameter  | Type | Default  | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| reference  | Object  | - | Should be your class instance. This could be any JavaScript object that you wish to set private data on. |
+| methodName  | string  | undefined | The method, you wish to invoke. |
+| ...params  | *  | undefined | The parameters to use. |
+| **returns**  | Boolean  | **false** | **The result of invoking the given method with supplied parameters.** |
+
+**Example:**
+```javascript
+return $private(this, 'somePrivateMethod', value1, value2);
+```
+
+<br />
+
 #### keys()
 
 Return an iterator for all the keys set against a given reference.<br /><br />
